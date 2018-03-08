@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <title>Gllasy</title>
 </head>
 <body style="background-color: #849d8f;"> 
   <header class="page-header">
     <div class="page-header__row">
-      <a href="#">
-        <img src="img/logo.svg" alt="Логотип"/>
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Логотип" width="154" height="64"/>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__nav-list">
@@ -48,6 +48,7 @@
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
               <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
+              <button class="visually-hidden" type="submit">Поиск</button>
             </form>
           </div>
         </li>
@@ -73,7 +74,7 @@
           </a>
           <div class="user-list__cart">
                   <div class="cart__goods">
-                    <button class="goods__delete" type="submit">Удалить</button>
+                    <button class="goods__delete" type="button">Удалить</button>
                     <img src="" alt="Пломбир с апельсиновым джемом">
                     <div class="goods__title">Пломбир с апельсиновым джемом</div>
                     <div class="goods__characteristic">
@@ -83,7 +84,7 @@
                     <span class="goods__total-cost">300 руб.</span>
                   </div>
                   <div class="cart__goods">
-                    <button class="goods__delete">Удалить</button>
+                    <button class="goods__delete"  type="button">Удалить</button>
                     <img src="" alt="Клубничный пломбир с присыпкой  из белого шоколада">
                     <div class="goods__title">Клубничный пломбир с присыпкой  из белого шоколада</div>
                      <div class="goods__characteristic">
@@ -101,18 +102,18 @@
     <div class="page-header__row">
     <ul class="bread-crumbs">
       <li class="bread-crumbs__item">
-        <a class="bread-crumbs__link" href="#">Главная  »</a>
+        <a class="bread-crumbs__link" href="index.html">Главная</a>
       </li>
       <li class="bread-crumbs__item">
-        <a class="bread-crumbs__link" href="#">Каталог  »</a>
+        <a class="bread-crumbs__link" href="#">Каталог</a>
       </li>
       <li class="bread-crumbs__item">
         <a class="bread-crumbs__link" href="#">Сливочное</a>
       </li> 
     </ul>
     <p class="page-header__contact">
-      С 10 до 20, ежедневно<br>
-      <span class="page-header__contact-tel ">8&nbsp;812&nbsp;450-25-25</span>
+      С 10 до 20, ежедневно
+      <a class="page-header__contact-tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
     </p>
   </div>
   </header>
@@ -123,7 +124,7 @@
           <form class="filter__form" action="#" method="get">
             <div class="filter__sorting">
               <label for="sorting-id" class="sorting__title">Сортировка</label>
-              <select class="sorting__fiудв" name="sorting" id="sorting-id">
+              <select class="sorting__field" name="sorting" id="sorting-id">
                 <option value="popular">по популярности</option>
                 <option value="price-inexp">сначала недорогие</option>
                 <option value="price-exp">сначала дорогие</option>
@@ -202,7 +203,7 @@
               </li>
               <li class="products__item">
                 <a class="products__full-foto" href="#">
-                  <img class="products__image src="" alt="Фото мороженого с кусочками шокалада"/>
+                  <img class="products__image" src="" alt="Фото мороженого с кусочками шокалада"/>
                 </a>
                 <b class="products__price">355&nbsp;&#8381;
                   <span class="products__price--font-size">/кг</span>
@@ -345,9 +346,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright">
-            <a class="copyright__HTMLacademy-logo" href="#">HTML Academy</a>
+            <a class="copyright__HTMLacademy-logo" href="https://up.htmlacademy.ru/htmlcss/20">HTML Academy</a>
             <p class="copyright__creator">
-              Сделано в <a class="copyright__link" href="#">HTML Academy</a> &copy;&nbsp;2017
+              Сделано в <a class="copyright__link" href="https://up.htmlacademy.ru/htmlcss/20">HTML Academy</a> &copy;&nbsp;2017
             </p>
           </div>
   </footer>

@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <title>Gllasy</title>
 </head>
 <body style="background-color: #849d8f;"> 
   <header class="page-header">
     <div class="page-header__row">
       <a href="#">
-        <img src="img/logo.svg" alt="Логотип"/>
+        <img src="img/logo.svg" alt="Логотип" width="" height=""/>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__nav-list">
@@ -19,7 +19,7 @@
                 <a class="nav-roll__link nav-roll__link--font-weight" href="#" >Новинки</a>
               </li>
               <li class="nav-roll__item">
-                <a class="nav-roll__link" href="#" >Сливочное</a>
+                <a class="nav-roll__link" href="catalog.html" >Сливочное</a>
               </li>
               <li class="nav-roll__item">
                 <a class="nav-roll__link" href="#" >Щербеты</a>
@@ -48,6 +48,7 @@
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
               <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
+              <button class="visually-hidden" type="submit">Поиск</button>
             </form>
           </div>
         </li>
@@ -80,7 +81,7 @@
     </p>
   </header>
   <main class="page-main">
-          <h1 class="visually-hidden">Мороженное от GllasyShop</h1>
+          <h1 class="visually-hidden">Мороженное от Gllasy Shop</h1>
           <div class="products-slider">
             <ul class="products-slider__list">
               <li class="products-slider__item">
@@ -120,8 +121,8 @@
           </section>
           <section class="page-main__products-hits">
             <h2 class="visually-hidden">Хиты</h2>
-            <ul class="products-hits__list">
-              <li class="products-hits__item">
+                        
+              <article class="products-hits__item">
                 <a class="products-hits__full-foto" href="#">
                   <img class="products-hits__image" src="" alt="Фото мороженого с апельсиновым джемом">
                 </a>
@@ -129,8 +130,8 @@
                   <span class="products-hits__price--font-size">/кг</span>
                 </b>
                 <h3 class="products-hits__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              </li>
-              <li class="products-hits__item">
+              </article>
+              <article class="products-hits__item">
                 <a class="products-hits__full-foto" href="#">
                   <img class="products-hits__image" src="" alt="Фото мороженого с кусочками шокалада"/>
                 </a>
@@ -138,8 +139,8 @@
                   <span class="products-hits__price--font-size">/кг</span>
                 </b>
                 <h3 class="products-hits__name">Сливочно-кофейное с кусочками шоколада</h3>
-              </li>
-              <li class="products-hits__item">
+              </article>
+              <article class="products-hits__item">
                 <a class="products-hits__full-foto" href="#">
                   <img class="products-hits__image" src="" alt="Фото мороженого с кусочками шокалада"/>
                 </a>
@@ -147,8 +148,8 @@
                   <span class="products-hits__price--font-size">/кг</span>
                 </b>
                 <h3 class="products-hits__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              </li>
-              <li class="products-hits__item">
+              </article>
+             <article class="products-hits__item">
                 <a class="products-hits__full-foto" href="#">
                   <img class="products-hits__image" src="" alt="Фото мороженого с кусочками шокалада"/>
                 </a>
@@ -156,8 +157,7 @@
                   <span class="products-hits__price--font-size">/кг</span>
                 </b>
                 <h3 class="products-hits__name">Сливочное крем-брюле с карамельной подливкой</h3>
-              </li>
-            </ul>
+              </article>
           </section>
           <section class="page-main__features">
             <h2 class="visually-hidden">Преимущества</h2>
@@ -206,8 +206,7 @@
          
           <section class="map">
            <h2 class="visually-hidden">Карта</h2>
-            <img class="map__img" src="img/" alt="Местоположение нашей морожен">
-            <span class="map__ice-cream-icon"></span>
+            <img class="map__img" src="img/" alt="Местоположение нашей морожен"/>
             <div class="map__contacts">
               <p>
                 Адрес главного офиса<br>
@@ -217,14 +216,14 @@
               <p>
                 Для заказов по телефону:
               </p>
-              <b class="contacts__tel">8&nbsp;812&nbsp;450-25-25</b>
+              <a href="tel:88124502525"><b class="contacts__tel">8&nbsp;812&nbsp;450-25-25</b>
               <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
               
               <a class="contacts__button" href="#">Форма обратной связи</a>
             </div> 
           </section>
-        </main>
-        <footer class="page-footer">
+  </main>
+  <footer class="page-footer">
           <div class="page-footer__social">
             <ul class="social__list">
               <li class="social__item">
@@ -259,12 +258,12 @@
             </ul>
           </div>
           <div class="page-footer__copyright">
-            <a class="copyright__HTMLacademy-logo" href="#">HTML Academy</a>
+            <a class="copyright__HTMLacademy-logo" href="https://up.htmlacademy.ru/htmlcss/20">HTML Academy</a>
             <p class="copyright__creator">
-              Сделано в <a class="copyright__link" href="#">HTML Academy</a> &copy;&nbsp;2017
+              Сделано в <a class="copyright__link" href="https://up.htmlacademy.ru/htmlcss/20">HTML Academy</a> &copy;&nbsp;2017
             </p>
           </div>
-        </footer>
+  </footer>
 
 
         <section class="modal">
@@ -277,7 +276,6 @@
             <textarea class="feedback__text field" id="comment" name="text" placeholder="Напишите что-нибудь&hellip;"></textarea>
             <button class="modal__button" type="submit">Отправить</button>
           </form>
-          
         </section> 
      
 </body>
