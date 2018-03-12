@@ -47,8 +47,9 @@
           </a>
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
+              <label for="search-id" class="visually-hidden">Поиск</label>
               <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
-              <button class="visually-hidden" type="submit">Поиск</button>
+              <button class="visually-hidden" type="submit">Начать поиск</button>
             </form>
           </div>
         </li>
@@ -59,7 +60,9 @@
           </a>
           <div class="user-list__authorization visualli-hidden">
             <form class="authorization__form" action="#" method="post">
-              <input class="authorization__field" id="email-id" name="email" type="email" placeholder="Электронная почта"/>      
+              <label for="email-id" class="visually-hidden">Ваш e-mail</label>
+              <input class="authorization__field" id="email-id" name="email" type="email" placeholder="Электронная почта"/>
+              <label for="password-id" class="visually-hidden">Ваш пароль</label>      
               <input class="authorization__field" id="password-id" name="password" type="password" placeholder="Пароль"/>
               <button class="authorization__button" type="submit">Войти</button>
               <a class="authorization__link" href="#">Забыли пароль?</a>
@@ -199,6 +202,7 @@
               ерунды. Честно =)
             </p>
             <form class="subscription__form" action="№" method="post">
+              <label for="subscription__email-id" class="visually-hidden">Ваш e-mail</label>
               <input class="subscription__field" id="subscription__email-id" type="email" name="e-mail" placeholder="Электронная почта">
               <button class="subscription__button" type="submit">Отправить</button>
             </form>
@@ -271,8 +275,11 @@
           <b class="modal__title">Мы обязательно вам ответим!</b>
           <button class="modal__close" type="button">Закрыть</button>
           <form class="modal__form" method="post">
+            <label for="name-id" class="visually-hidden">Ваше Имя</label>
             <input class="modal__name" id="name-id" type="text" name="name" placeholder="Как вас зовут?">
+            <label for="modal__email-id" class="visually-hidden">Ваше почта для ответа</label>
             <input class="modal__email" id="modal__email-id" type="email" name="email" placeholder="Ваша почта для ответа?">
+            <label for="comment" class="visually-hidden">Напишите коментарий</label>
             <textarea class="feedback__text field" id="comment" name="text" placeholder="Напишите что-нибудь&hellip;"></textarea>
             <button class="modal__button" type="submit">Отправить</button>
           </form>

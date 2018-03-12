@@ -47,6 +47,7 @@
           </a>
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
+               <label for="search-id" class="visually-hidden">Поиск</label>
               <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
               <button class="visually-hidden" type="submit">Поиск</button>
             </form>
@@ -59,7 +60,9 @@
           </a>
           <div class="user-list__authorization visualli-hidden">
             <form class="authorization__form" action="#" method="post">
+              <label for="email-id" class="visually-hidden">Ваш e-mail</label>
               <input class="authorization__field" id="email-id" name="email" type="email" placeholder="Электронная почта"/>      
+              <label for="password-id" class="visually-hidden">Ваш пароль</label>
               <input class="authorization__field" id="password-id" name="password" type="password" placeholder="Пароль"/>
               <button class="authorization__button" type="submit">Войти</button>
               <a class="authorization__link" href="#">Забыли пароль?</a>
