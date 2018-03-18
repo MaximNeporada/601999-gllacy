@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Gllasy</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body style="background-color: #849d8f;"> 
   <header class="page-header">
@@ -10,16 +13,16 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип" width="154" height="64"/>
       </a>
-      <nav class="main-nav">
+    <nav class="main-nav">
         <ul class="main-nav__nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Каталог</a>
+            <a class="nav-list__link active" href="#">Каталог</a>
             <ul class="nav-list__nav-roll visually-hidden">
               <li class="nav-roll__item nav-roll__item--border ">
                 <a class="nav-roll__link nav-roll__link--font-weight" href="#" >Новинки</a>
               </li>
               <li class="nav-roll__item">
-                <a class="nav-roll__link" href="#" >Сливочное</a>
+                <a class="nav-roll__link active" href="#">Сливочное</a>
               </li>
               <li class="nav-roll__item">
                 <a class="nav-roll__link" href="#" >Щербеты</a>
@@ -48,8 +51,8 @@
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
               <label for="search-id" class="visually-hidden">Поиск</label>
-              <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
-              <button class="visually-hidden" type="submit">Поиск</button>
+              <input class="search__field input-style" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
+              <button class="visually-hidden button" type="submit">Начать поиск</button>
             </form>
           </div>
         </li>
@@ -61,10 +64,10 @@
           <div class="user-list__authorization visualli-hidden">
             <form class="authorization__form" action="#" method="post">
               <label for="email-id" class="visually-hidden">Ваш e-mail</label>
-              <input class="authorization__field" id="email-id" name="email" type="email" placeholder="Электронная почта"/>      
-              <label for="password-id" class="visually-hidden">Ваш пароль</label>
-              <input class="authorization__field" id="password-id" name="password" type="password" placeholder="Пароль"/>
-              <button class="authorization__button" type="submit">Войти</button>
+              <input class="authorization__field input-style" id="email-id" name="email" type="email" placeholder="Электронная почта"/>
+              <label for="password-id" class="visually-hidden">Ваш пароль</label>      
+              <input class="authorization__field input-style" id="password-id" name="password" type="password" placeholder="Пароль"/>
+              <button class="authorization__button button" type="submit">Войти</button>
               <a class="authorization__link" href="#">Забыли пароль?</a>
               <a class="authorization__link" href="#">Регистрация</a>
             </form>  
@@ -78,7 +81,7 @@
           <div class="user-list__cart">
             <div class="cart__goods">
               <button class="goods__delete" type="button">Удалить</button>
-              <img src="" alt="Пломбир с апельсиновым джемом">
+              <img src="img/mini-ice-cream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
               <div class="goods__title">Пломбир с апельсиновым джемом</div>
               <div class="goods__characteristic">
                 <span class="goods__weight">1,5 кг x</span>
@@ -88,7 +91,7 @@
             </div>
             <div class="cart__goods">
               <button class="goods__delete"  type="button">Удалить</button>
-              <img src="" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+              <img src="img/mini-ice-cream3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада">
               <div class="goods__title">Клубничный пломбир с присыпкой  из белого шоколада</div>
                <div class="goods__characteristic">
                 <span class="goods__weight">1,5 кг x</span>
@@ -97,7 +100,7 @@
               <span class="goods__total-cost">450 руб.</span>
             </div>
             <span class="cart__total-cost">Итого: 750 руб.</span>
-            <a class="cart__button" href="#">Оформить заказ</a>
+            <a class="cart__button button" href="#">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -111,7 +114,7 @@
         <a class="bread-crumbs__link" href="#">Каталог</a>
       </li>
       <li class="bread-crumbs__item">
-        <a class="bread-crumbs__link" href="#">Сливочное</a>
+        <a class="bread-crumbs__link desabled" href="#">Сливочное</a>
       </li> 
     </ul>
     <p class="page-header__contact">
@@ -125,8 +128,8 @@
      <section class="catalog__filter">
         <h2 class="visually-hidden">Все силвочные мороженьки</h2>
         <form class="filter__form" action="#" method="get">
-          <div class="filter__sorting">
-            <label for="sorting-id" class="sorting__title">Сортировка</label>
+          <div class="filter__sorting filter--style">
+            <label for="sorting-id" class="sorting__title">Сортировка:</label>
             <select class="sorting__field" name="sorting" id="sorting-id">
               <option value="popular">по популярности</option>
               <option value="price-inexp">сначала недорогие</option>
@@ -143,7 +146,7 @@
             <span class="richness__title">
               Жирность:
             </span>
-            <div class="richness__controls">
+            <div class="richness__controls filter--style">
               <input class="richness__radio" type="radio" name="richness" id="radio_zero">
               <label for="radio_zero">0%</label>
               <input class="richness__radio" type="radio" name="richness" id="radio_10" checked>
@@ -158,7 +161,7 @@
             <span class="filling__title">
               Наполнители:
             </span>
-            <div class="filling__controls">
+            <div class="filling__controls filter--style">
               <input class="filling__checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
               <label for="chocolate">шоколадные</label>
               <input class="filling__checkbox" type="checkbox" name="sugar" id="sugar" checked>
@@ -292,8 +295,8 @@
           <li class="pagination__item">
             <a class="pagination__prev" href="#">Предыдущая</a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
+          <li class="pagination__item ">
+            <a class="pagination__link active" href="#">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -334,7 +337,7 @@
       <span class="about-us__love-icon"></span>
       <ul class="about-us__list">
         <li class="about-us__item">
-          <a class="about-us__link" href="#">Для поставщиков</a>
+          <a class="about-us__link about-us__link--bold" href="#">Для поставщиков</a>
         </li>
         <li class="about-us__item">
           <a class="about-us__link" href="#">О производстве</a>
@@ -348,7 +351,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright">
-       <a class="copyright__HTMLacademy-logo" href="https://up.htmlacademy.ru/htmlcss/20"><img class="htmlacademy-logo" src="img/logo-htmlacademy.svg"  width="108" height="39" alt="Фото мороженого с кусочками шокалада"/> HTML Academy</a>
+      <a class="copyright__HTMLacademy-logo" href="https://up.htmlacademy.ru/htmlcss/20"><img class="htmlacademy-logo" src="img/logo-htmlacademy.svg"  width="108" height="39" alt="Фото мороженого с кусочками шокалада"/> HTML Academy</a>
       <p class="copyright__creator">
         Сделано в <a class="copyright__link" href="https://up.htmlacademy.ru/htmlcss/20">HTML Academy</a> &copy;&nbsp;2017
       </p>

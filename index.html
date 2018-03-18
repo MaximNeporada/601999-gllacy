@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Gllasy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body style="background-color: #849d8f;"> 
+<body> 
   <header class="page-header">
     <div class="page-header__row">
-      <a href="#">
+      <a>
         <img src="img/logo.svg" alt="Логотип" width="" height=""/>
       </a>
       <nav class="main-nav">
@@ -48,8 +51,8 @@
           <div class="user-list__search visually-hidden">
             <form class="search__form" action="#" method="post">
               <label for="search-id" class="visually-hidden">Поиск</label>
-              <input class="search__field" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
-              <button class="visually-hidden" type="submit">Начать поиск</button>
+              <input class="search__field input-style" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
+              <button class="visually-hidden button" type="submit">Начать поиск</button>
             </form>
           </div>
         </li>
@@ -61,10 +64,10 @@
           <div class="user-list__authorization visualli-hidden">
             <form class="authorization__form" action="#" method="post">
               <label for="email-id" class="visually-hidden">Ваш e-mail</label>
-              <input class="authorization__field" id="email-id" name="email" type="email" placeholder="Электронная почта"/>
+              <input class="authorization__field input-style" id="email-id" name="email" type="email" placeholder="Электронная почта"/>
               <label for="password-id" class="visually-hidden">Ваш пароль</label>      
-              <input class="authorization__field" id="password-id" name="password" type="password" placeholder="Пароль"/>
-              <button class="authorization__button" type="submit">Войти</button>
+              <input class="authorization__field input-style" id="password-id" name="password" type="password" placeholder="Пароль"/>
+              <button class="authorization__button button" type="submit">Войти</button>
               <a class="authorization__link" href="#">Забыли пароль?</a>
               <a class="authorization__link" href="#">Регистрация</a>
             </form>  
@@ -80,46 +83,46 @@
     </div>
     <p class="page-header__contact">
       С 10 до 20, ежедневно<br>
-      <span class="page-header__contact-tel ">8&nbsp;812&nbsp;450-25-25</span>
+      <a href="tel:88124502525" class="page-header__contact-tel">8&nbsp;812&nbsp;450-25-25</a>
     </p>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мороженное от Gllasy Shop</h1>
     <div class="products-slider">
       <ul class="products-slider__list">
-        <li class="products-slider__item">
+        <li class="products-slider__item products-slider__item--img1">
           <h2 class="products-slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
           <a class="products-slider__link button" href="#">Давайте оба!</a>
         </li>
-        <li class="products-slider__item">
+        <li class="products-slider__item products-slider__item--img2">
           <h2 class="products-slider__title">Шоколадный пломбир и лимонный сорбет</h2>
-          <a class="products-slider__link" href="#">Давайте оба!</a>
+          <a class="products-slider__link button" href="#">Давайте оба!</a>
         </li>
-        <li class="products-slider__item">
+        <li class="products-slider__item products-slider__item--img3">
           <h2 class="products-slider__title">Пломбир с помадкой и клубничный щербет</h2>
-          <a class="products-slider__link" href="#">Давайте оба!</a>
+          <a class="products-slider__link button" href="#">Давайте оба!</a>
         </li>
       </ul>
     </div>
     <section class="page-main__actions">
       <h2 class="visually-hidden">Акции</h2>
-      <div class="actions__block">
+      <div class="actions__block actions__block--bg-razz">
         <h3 class="actions__title">Малинка даром!</h3>
         <p class="actions__info">
           При покупке 2 кг любого фруктового мороженого,
           добавим в ваш заказ банку
           малинового варенья бесплатно.
         </p>
-        <a class="actions__link" href="#">Хочу варенье!</a>
+        <a class="actions__link button" href="#">Хочу варенье!</a>
       </div>
-      <div class="actions__block">
+      <div class="actions__block actions__block--bg-chocolate">
         <h3 class="actions__title">Шоколадки даром!</h3>
         <p class="actions__info">
           При покупке 2 кг пломбира, добавим в ваш
           заказ упаковку вкуснейшей шоколадной
           присыпки совершенно бесплатно.
         </p>
-        <a class="actions-link" href="#">Хочу шоколадки!</a>
+        <a class="actions-link button" href="#">Хочу шоколадки!</a>
       </div>
     </section>
     <section class="page-main__products-hits">
@@ -164,8 +167,8 @@
     </section>
     <section class="page-main__features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <b class="features__main-info">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого
-      собственного производства на развес</b>
+      <p class="features__main-info">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого
+      собственного производства на развес</p>
       <ul class="features__list">
         <li class="features__item">
           Все наше мороженое изготавливается на собственном производстве с использованием
@@ -195,17 +198,19 @@
        
     </article>
     <section class="subscription">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="subscription__description">
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
-        вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
-        ерунды. Честно =)
-      </p>
-      <form class="subscription__form" action="№" method="post">
-        <label for="subscription__email-id" class="visually-hidden">Ваш e-mail</label>
-        <input class="subscription__field" id="subscription__email-id" type="email" name="e-mail" placeholder="Электронная почта">
-        <button class="subscription__button" type="submit">Отправить</button>
-      </form>
+      <div class="subscription__block">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="subscription__description">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+          вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
+          ерунды. Честно =)
+        </p>
+        <form class="subscription__form" action="№" method="post">
+          <label for="subscription__email-id" class="visually-hidden">Ваш e-mail</label>
+          <input class="subscription__field input-style" id="subscription__email-id" type="email" name="e-mail" placeholder="Электронная почта">
+          <button class="subscription__button button" type="submit">Отправить</button>
+        </form>
+    </div>
     </section>
          
     <section class="map">
@@ -220,10 +225,10 @@
         <p>
           Для заказов по телефону:
         </p>
-        <a href="tel:88124502525"><b class="contacts__tel">8&nbsp;812&nbsp;450-25-25</b>
+        <a class="contacts__tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
         <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
         
-        <a class="contacts__button" href="#">Форма обратной связи</a>
+        <a class="contacts__button button" href="#">Форма обратной связи</a>
       </div> 
     </section>
   </main>
@@ -248,7 +253,7 @@
       <span class="about-us__love-icon"></span>
       <ul class="about-us__list">
         <li class="about-us__item">
-          <a class="about-us__link" href="#">Для поставщиков</a>
+          <a class="about-us__link about-us__link--bold" href="#">Для поставщиков</a>
         </li>
         <li class="about-us__item">
           <a class="about-us__link" href="#">О производстве</a>
@@ -276,12 +281,12 @@
     <button class="modal__close" type="button">Закрыть</button>
     <form class="modal__form" method="post">
       <label for="name-id" class="visually-hidden">Ваше Имя</label>
-      <input class="modal__name" id="name-id" type="text" name="name" placeholder="Как вас зовут?">
+      <input class="modal__input input-style" id="name-id" type="text" name="name" placeholder="Как вас зовут?">
       <label for="modal__email-id" class="visually-hidden">Ваше почта для ответа</label>
-      <input class="modal__email" id="modal__email-id" type="email" name="email" placeholder="Ваша почта для ответа?">
+      <input class="modal__input input-style" id="modal__email-id" type="email" name="email" placeholder="Ваша почта для ответа?">
       <label for="comment" class="visually-hidden">Напишите коментарий</label>
-      <textarea class="feedback__text field" id="comment" name="text" placeholder="Напишите что-нибудь&hellip;"></textarea>
-      <button class="modal__button" type="submit">Отправить</button>
+      <textarea class="modal__textarea input-style" id="comment" name="text" placeholder="Напишите что-нибудь&hellip;"></textarea>
+      <button class="modal__button button" type="submit">Отправить</button>
     </form>
   </section> 
      
