@@ -22,7 +22,7 @@
             <ul class="main-nav__nav-list">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">Каталог</a>
-                <ul class="nav-list__nav-roll visually-hidden">
+                <ul class="nav-list__nav-roll">
                   <li class="nav-roll__item nav-roll__item--border ">
                     <a class="nav-roll__link nav-roll__link--font-weight" href="#" >Новинки</a>
                   </li>
@@ -50,10 +50,11 @@
             </nav>
             <ul class="user-list">
               <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <span class="user-list__search-icon">Поиск</span>
+                <a class="user-list__link link-search" href="#">
+                  <span class="user-list__search-icon"></span>
+                  <span class="visually-hidden">Поиск<span>
                 </a>
-                <div class="user-list__search visually-hidden">
+                <div class="user-list__roll search">
                   <form class="search__form" action="#" method="post">
                     <label for="search-id" class="visually-hidden">Поиск</label>
                     <input class="search__field input-style" id="search-id" name="search" type="search" placeholder="Что ищем?"/>
@@ -62,24 +63,26 @@
                 </div>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link" href="#">
+                <a class="user-list__link link-login" href="#">
                   <span class="user-list__login-icon"></span>
                   Вход
                 </a>
-                <div class="user-list__authorization visually-hidden">
+                <div class="user-list__roll authorization">
                   <form class="authorization__form" action="#" method="post">
                     <label for="email-id" class="visually-hidden">Ваш e-mail</label>
                     <input class="authorization__field input-style" id="email-id" name="email" type="email" placeholder="Электронная почта"/>
                     <label for="password-id" class="visually-hidden">Ваш пароль</label>      
                     <input class="authorization__field input-style" id="password-id" name="password" type="password" placeholder="Пароль"/>
                     <button class="authorization__button button" type="submit">Войти</button>
-                    <a class="authorization__link" href="#">Забыли пароль?</a>
-                    <a class="authorization__link" href="#">Регистрация</a>
+                    <div class="link-container">
+                      <a class="authorization__link" href="#">Забыли пароль?</a>
+                      <a class="authorization__link" href="#">Новая регистрация</a>
+                    </div>
                   </form>  
                 </div>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link" href="#">
+                <a class="user-list__link link-cart" href="#">
                   <span class="user-list__cart-icon"></span>
                   Пусто
                 </a>
@@ -139,7 +142,7 @@
             заказ упаковку вкуснейшей шоколадной
             присыпки совершенно бесплатно.
           </p>
-          <a class="actions-link button" href="#">Хочу шоколадки!</a>
+          <a class="actions__link button" href="#">Хочу шоколадки!</a>
         </div>
       </section>
       <section class="page-main__products-hits">
@@ -152,7 +155,12 @@
             <b class="products-hits__price">310&nbsp;&#8381;
               <span class="products-hits__price--font-size">/кг</span>
             </b>
-            <h3 class="products-hits__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <div class="products-hits__name--text-align">
+              <span class="products-hits__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            </div>
+            <div class="products-hits__button-block">
+              <a href="#" class="products-hits__button button">Быстрый просморт</a>
+            </div>
           </article>
           <article class="products-hits__item">
             <a class="products-hits__full-foto" href="#">
@@ -161,7 +169,12 @@
             <b class="products-hits__price">380&nbsp;&#8381;
               <span class="products-hits__price--font-size">/кг</span>
             </b>
-            <h3 class="products-hits__name">Сливочно-кофейное с кусочками шоколада</h3>
+            <div class="products-hits__name--text-align">
+              <span class="products-hits__name">Сливочно-кофейное с кусочками шоколада</span>
+            </div>
+            <div class="products-hits__button-block">
+              <a href="#" class="products-hits__button button">Быстрый просморт</a>
+            </div>
           </article>
           <article class="products-hits__item">
             <a class="products-hits__full-foto" href="#">
@@ -170,7 +183,13 @@
             <b class="products-hits__price">355&nbsp;&#8381;
               <span class="products-hits__price--font-size">/кг</span>
             </b>
-            <h3 class="products-hits__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <div class="products-hits__name--text-align">
+              <span class="products-hits__name">Сливочно-клубничное с присыпкой из белого шоколада
+              </span>
+            </div>
+            <div class="products-hits__button-block">
+              <a href="#" class="products-hits__button button">Быстрый просморт</a>
+            </div>
           </article>
          <article class="products-hits__item">
             <a class="products-hits__full-foto" href="#">
@@ -179,28 +198,37 @@
             <b class="products-hits__price">355&nbsp;&#8381;
               <span class="products-hits__price--font-size">/кг</span>
             </b>
-            <h3 class="products-hits__name">Сливочное крем-брюле с карамельной подливкой</h3>
+            <div class="products-hits__name--text-align">
+              <span class="products-hits__name">Сливочное крем-брюле с карамельной подливкой</span>
+            </div>
+            <div class="products-hits__button-block">
+              <a href="#" class="products-hits__button button">Быстрый просморт</a>
+            </div>
           </article>
         </div>
       </section>
       <section class="page-main__features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="features__main-info">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого
+        <p class="features__main-info">Магазин Глейси &mdash; это онлайн- и офлайн-магазин по продаже мороженого
         собственного производства на развес</p>
         <ul class="features__list">
           <li class="features__item">
+            <span class="features__icon icon-ice-cream"></span>
             Все наше мороженое изготавливается на собственном производстве с использованием
             современного оборудования и проверенных временем технологий.
           </li>
           <li class="features__item">
+            <span class="features__icon icon-cow"></span>
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
             с которыми нас связываает долговременное сотрудничество.
           </li>
           <li class="features__item">
+            <span class="features__icon icon-leaf"></span>
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качестваю
             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="features__item">
+            <span class="features__icon icon-thermometer"></span>
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
             который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
@@ -233,26 +261,25 @@
         </section>
       </div>
     </div>       
+   
       <section class="map">
        <h2 class="visually-hidden">Карта</h2>
         <img class="map__img" src="img/map.jpg" width="1200" height="430" alt="Местоположение нашей морожен"/>
-        <div class="container container--relative">
-          <div class="map__contacts">
-            <p>
-              Адрес главного офиса<br>
-              и онлайн магазина:</p>
-              <b class="contacts__address">ул.&nbsp;Большая&nbsp;Конюшенная 19/8, Санкт-Петербург</b>
-            
-            <p>
-              Для заказов по телефону:
-            </p>
-            <a class="contacts__tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
-            <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
-            
-            <a class="contacts__button button" href="#">Форма обратной связи</a>
-          </div>
-        </div>   
-      </section>
+        <div class="map__contacts">
+          <p>
+            Адрес главного офиса<br>
+            и онлайн магазина:</p>
+            <b class="contacts__address">ул.&nbsp;Большая&nbsp;Конюшенная 19/8, Санкт-Петербург</b>
+          
+          <p>
+            Для заказов по телефону:
+          </p>
+          <a class="contacts__tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
+          <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
+          
+          <a class="contacts__button button" href="#">Форма обратной связи</a>
+        </div>
+    </section>
     
   </main>
   <footer class="page-footer">
