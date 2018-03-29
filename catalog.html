@@ -7,23 +7,23 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body> 
+<body class="page-catalog"> 
   <header class="page-header">
     <div class="container">
       <div class="page-header__row">
-      <a href="index.html">
+          <a class="page-header__logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип" width="154" height="64"/>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Каталог</a>
+          <li class="nav-list__item ">
+            <a class="nav-list__link active" href="#">Каталог</a>
             <ul class="nav-list__nav-roll">
               <li class="nav-roll__item nav-roll__item--border ">
                 <a class="nav-roll__link nav-roll__link--font-weight" href="#" >Новинки</a>
               </li>
-              <li class="nav-roll__item">
-                <a class="nav-roll__link">Сливочное</a>
+              <li class="nav-roll__item active">
+                <a class="nav-roll__link ">Сливочное</a>
               </li>
               <li class="nav-roll__item">
                 <a class="nav-roll__link" href="#" >Щербеты</a>
@@ -154,26 +154,37 @@
               <option value="price-exp">сначала дорогие</option>
               <option value="fat">по жирности</option>
             </select>
+            <div class="sorting__field-dir"></div>
           </div>
           <div class="filter__price">
-            <label for="price-id" class="price__title filter__label">Цена:</label>
-           <!--  Пока не думал как сделать -->
-            <input class="price__range filter--style" type="range" name="range" id="price-id" min="0" max="100" step="1" value="50"> 
-            
+            <div class="price--price-flex">
+              <div class="price__title"> Цена:</div>
+              <div class="price-controls">
+                  <label class="min-price"><input class="price-input" type="text" name="min-price" value="100"> руб.</label>
+                  <label class="max-price">&ndash; <input class="price-input" type="text" name="max-price" value="500"> руб.</label>
+              </div>
+            </div>
+            <div class="price-range">
+              <div class="scale">
+                <div class="bar" style="width: 60%; margin-left: 10%;"></div>
+              </div>
+              <div class="price-toggle toggle-min"></div>
+              <div class="price-toggle toggle-max"></div>
+            </div>
           </div>
           <div class="filter__richness">
             <span class="richness__title">
               Жирность:
             </span>
             <div class="richness__controls filter--style">
-              <input class="richness__radio" type="radio" name="richness" id="radio_zero">
-              <label for="radio_zero">0%</label>
-              <input class="richness__radio" type="radio" name="richness" id="radio_10" checked>
-              <label for="radio_10">до 10%</label>
-              <input class="richness__radio" type="radio" name="richness" id="radio_30">
-              <label for="radio_30">до 30%</label>
-              <input class="richness__radio" type="radio" name="richness" id="radio_over-30">
-              <label for="radio_over-30">выше 30%</label>
+              <input class="richness__radio visually-hidden" type="radio" name="richness" id="radio_zero">
+              <label for="radio_zero" class="richness--el">0%</label>
+              <input class="richness__radio visually-hidden" type="radio" name="richness" id="radio_10" checked>
+              <label for="radio_10" class="richness--el">до 10%</label>
+              <input class="richness__radio visually-hidden" type="radio" name="richness" id="radio_30">
+              <label for="radio_30" class="richness--el">до 30%</label>
+              <input class="richness__radio visually-hidden" type="radio" name="richness" id="radio_over-30">
+              <label for="radio_over-30" class="richness--el">выше 30%</label>
             </div>
           </div>
           <div class="filter__filling">
@@ -181,16 +192,16 @@
               Наполнители:
             </span>
             <div class="filling__controls filter--style">
-              <input class="filling__checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
-              <label for="chocolate">шоколадные</label>
-              <input class="filling__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input class="filling__checkbox" type="checkbox" name="fruit" id="fruit">
-              <label for="fruit">фрукты</label>
-              <input class="filling__checkbox" type="checkbox" name="syrop" id="syrop">
-              <label for="syrop">сиропы</label>
-              <input class="filling__checkbox" type="checkbox" name="jam" id="jam">
-              <label for="jam">джемы</label>
+              <input class="filling__checkbox visually-hidden" type="checkbox" name="chocolate" id="chocolate">
+              <label for="chocolate" class="checkbox__item">шоколадные</label>
+              <input class="filling__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+              <label for="sugar" class="checkbox__item">сахарные присыпки</label>
+              <input class="filling__checkbox visually-hidden" type="checkbox" name="fruit" id="fruit">
+              <label for="fruit"  class="checkbox__item">фрукты</label>
+              <input class="filling__checkbox visually-hidden" type="checkbox" name="syrop" id="syrop">
+              <label for="syrop"  class="checkbox__item">сиропы</label>
+              <input class="filling__checkbox visually-hidden" type="checkbox" name="jam" id="jam">
+              <label for="jam"  class="checkbox__item">джемы</label>
             </div>
           </div>
           <button class="filter__button" type="submit">Применить</button>
@@ -204,7 +215,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image" src="img/ice-cream1.jpg"  width="267" height="267" alt="Фото мороженого с апельсиновым джемом">
             </a>
-            <b class="products__price">310&nbsp;&#8381;
+            <b class="products__price">310
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -218,7 +229,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream2.jpg"  width="267" height="267" alt="Фото мороженого с кусочками шокалада"/>
             </a>
-            <b class="products__price">380&nbsp;&#8381;
+            <b class="products__price">380
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -234,7 +245,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image" src="img/ice-cream3.jpg"  width="267" height="267" alt="Фото мороженого с кусочками шокалада"/>
             </a>
-            <b class="products__price">355&nbsp;&#8381;
+            <b class="products__price">355
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -250,7 +261,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image" src="img/ice-cream4.jpg"  width="267" height="267" alt="Фото мороженого с кусочками шокалада"/>
             </a>
-            <b class="products__price">355&nbsp;&#8381;
+            <b class="products__price">415
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -267,7 +278,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image" src="img/ice-cream5.jpg"  width="267" height="267" alt="Сливочное с брусничным джемом">
             </a>
-            <b class="products__price">325&nbsp;&#8381;
+            <b class="products__price">325
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -283,7 +294,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"   src="img/ice-cream6.jpg"  width="267" height="267" alt="Фото мороженого Сливочно-черничное с цельными ягодами черники "/>
             </a>
-            <b class="products__price">410&nbsp;&#8381;
+            <b class="products__price">410
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -299,7 +310,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream7.jpg"  width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"/>
             </a>
-            <b class="products__price">375&nbsp;&#8381;
+            <b class="products__price">375
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -315,7 +326,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream8.jpg"  width="267" height="267" alt="Фото мороженого Сливочное с шоколадной стружкой"/>
             </a>
-            <b class="products__price">320&nbsp;&#8381;
+            <b class="products__price">320
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -331,7 +342,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream9.jpg"  width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
-            <b class="products__price">440&nbsp;&#8381;
+            <b class="products__price">440
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -347,7 +358,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream10.jpg"  width="267" height="267" alt="Фото мороженого Сливочноe с ментоловым сиропом"/>
             </a>
-            <b class="products__price">435&nbsp;&#8381;
+            <b class="products__price">435
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -363,7 +374,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream11.jpg"  width="267" height="267" alt="Сливочное с кусочками черного шоколада"/>
             </a>
-            <b class="products__price">355&nbsp;&#8381;
+            <b class="products__price">355
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -379,7 +390,7 @@
             <a class="products__full-foto" href="#">
               <img class="products__image"  src="img/ice-cream12.jpg"  width="267" height="267" alt="Фото мороженого Сливочное с мятным сиропом"/>
             </a>
-            <b class="products__price">420&nbsp;&#8381;
+            <b class="products__price">420
               <span class="products__price--font-size">/кг</span>
             </b>
             <div class="products__name--text-align">
@@ -423,8 +434,8 @@
       </section>
     </main>
 
-  <footer class="page-footer">
-    <div class="container container--flex">
+ <footer class="page-footer">
+    <div class="container--flex">
       <div class="page-footer__social">
         <ul class="social__list">
           <li class="social__item">
