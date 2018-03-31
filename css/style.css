@@ -1147,7 +1147,7 @@ input[type="radio"].visually-hidden {
 
 .subscription__block {
   padding-left: 21px;
-  padding-right: 14px;
+  padding-right: 10px;
   padding-top: 29px;
   padding-bottom: 35px;
 
@@ -1188,8 +1188,19 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.map__iframe {
+  position: relative;
+
+  z-index: 1;
+}
+
 .map__img {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0 auto;
+
+  z-index: 0;
 }
 
 .map__contacts {
@@ -1226,6 +1237,8 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translateY(-51%);
       -ms-transform: translateY(-51%);
           transform: translateY(-51%);
+
+  z-index: 2;
 }
 
 .map__contacts p {
