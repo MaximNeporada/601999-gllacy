@@ -1764,7 +1764,7 @@ input[type="radio"].visually-hidden {
      text-overflow: '';
   
   -ms-appearance: none;
-  appearance: none!important;
+  appearance: none;
   cursor: pointer;
 }
 
