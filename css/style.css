@@ -1055,27 +1055,28 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
 }
 
-.features__icon {
+.features__item::before {
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 49px;
   height: 49px;
 }
 
-.icon-ice-cream {
+.icon-ice-cream::before {
   background-image: url(../img/icon-ice-cream.svg);
 }
 
-.icon-cow {
+.icon-cow::before {
   background-image: url(../img/icon-cow.svg);
 }
 
-.icon-leaf {
+.icon-leaf::before {
   background-image: url(../img/icon-leaf.svg);
 }
 
-.icon-thermometer {
+.icon-thermometer::before {
   background-image: url(../img/icon-thermometer.svg);
 }
 
