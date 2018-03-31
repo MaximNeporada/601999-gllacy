@@ -811,12 +811,12 @@ input[type="radio"].visually-hidden {
 }
 
 .actions__block--bg-razz {
-  background-image: url(../img/bg-razz.png);
+  background-image: url(../img/bg-razz.jpg);
   background-color: #912140;
 }
 
 .actions__block--bg-chocolate {
-  background-image: url(../img/bg-chocolate.png);
+  background-image: url(../img/bg-chocolate.jpg);
   background-color: #402315;
 }
 
