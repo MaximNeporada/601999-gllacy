@@ -801,7 +801,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: start;
           justify-content: flex-start;
 
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border: none;
   border-radius: 15px;
@@ -1089,6 +1089,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-items: flex-start;
   margin-bottom: 39px;
 }
 
@@ -1978,6 +1979,8 @@ input[type="radio"].visually-hidden {
   content: url(../img/checkbox-off.svg);
   left: -34px;
   top: -4px;
+  width: 26px;
+  height: 25px;
 
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -2002,7 +2005,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 10px auto -webkit-focus-ring-color;
 }
 
 .filter__filling {
