@@ -1190,6 +1190,7 @@ input[type="radio"].visually-hidden {
 
 .map__iframe {
   position: absolute;
+  width: 100%;
   top: 0;
 
   z-index: 1;
