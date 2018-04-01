@@ -4,15 +4,13 @@
   <meta charset="utf-8">
   <title>Gllasy</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-  
   <input  checked class="visually-hidden" id="product-1" name="toggle" type="radio">
   <input   class="visually-hidden" id="product-2" name="toggle" type="radio">
   <input class="visually-hidden" id="product-3" name="toggle" type="radio">
-
   <div class="slider-bg">
     <header class="page-header">
       <div class="container">
@@ -228,18 +226,21 @@
           </section>
         </div>
       </div>
+
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.746328848832!2d30.3256994191759!3d59.938821334682316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522536919701" width="1200" height="430" frameborder="0" class="map__iframe" allowfullscreen></iframe>
-        <img alt="Местоположение нашей морожен" class="map__img" height="430" src="img/map.jpg" width="1200">
-        <div class="map__contacts">
-          <p>Адрес главного офиса<br>
-          и офнлайн магазина:</p>
-          <b class="contacts__address">ул.&nbsp;Большая&nbsp;Конюшенная 19/8, Санкт-Петербург</b>
-          <p>Для заказов по телефону:</p>
-          <a class="contacts__tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
-          <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
-          <a class="contacts__button button" href="#">Форма обратной связи</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.746328848832!2d30.3256994191759!3d59.938821334682316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522536919701" width="100%" height="430" frameborder="0" class="map__iframe" allowfullscreen></iframe>
+        <div class="map-container">
+          <img alt="Местоположение нашей морожен" class="map__img"  src="img/map.jpg" width="1200" height="430">
+          <div class="map__contacts">
+            <p>Адрес главного офиса<br>
+            и офнлайн магазина:</p>
+            <b class="contacts__address">ул.&nbsp;Большая&nbsp;Конюшенная 19/8, Санкт-Петербург</b>
+            <p>Для заказов по телефону:</p>
+            <a class="contacts__tel" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
+            <span class="contacts__working-hours">(с 10 до 20 ежедневно)</span>
+            <a class="contacts__button button" href="#">Форма обратной связи</a>
+          </div>
         </div>
       </section>
     </main>
@@ -305,7 +306,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  
   <section class="modal">
     <h2 class="visually-hidden">Форма обратной связи</h2><b class="modal__title">Мы обязательно вам ответим!</b>
     <button class="modal__close" type="button">

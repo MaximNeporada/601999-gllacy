@@ -1184,21 +1184,26 @@ input[type="radio"].visually-hidden {
 
 .map {
   position: relative;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .map__iframe {
-  position: relative;
+  position: absolute;
+  top: 0;
 
   z-index: 1;
 }
 
-.map__img {
-  position: absolute;
-  top: 0;
-  right: 0;
+.map-container {
+  position: relative;
+  width: 1200px;
   margin: 0 auto;
+}
+
+.map__img {
+  position: relative;
+  
 
   z-index: 0;
 }
